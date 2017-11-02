@@ -1,4 +1,4 @@
-# Test Advisory Board
+# Test Advisory Board [![Build Status](https://travis-ci.org/instructure/test_advisory_board.svg?branch=master)](https://travis-ci.org/instructure/test_advisory_board)
 
 Collection of proof of concepts that demonstrate technology used in production. Primary focus is on testing.
 
