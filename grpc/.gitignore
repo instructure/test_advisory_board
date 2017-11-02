@@ -1,0 +1,11 @@
+java/out/
+java/build/
+java/*.iml
+.idea
+.gradle
+node_modules/
+swift/ios_grpc/Pods/
+**xcuserdata
+**xcworkspace
+**server.pb.swift
+**swiftgrpc.log
