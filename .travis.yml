@@ -9,8 +9,8 @@ before_install:
   - export PATH="$HOME/.yarn/bin:$PATH"
 before_script:
   - cd grpc && yarn
-script:
   - "node ./grpc/nodejs/server.js &"
+script:
   - "node ./grpc/nodejs/client.js"
 notifications:
   email:
