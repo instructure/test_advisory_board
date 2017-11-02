@@ -1,9 +1,9 @@
-# pact-poc
+# Pact (Ruby)
 
 This is an example of using the [Pact gem] for consumer-driven contract
 testing.
 
-If you're new to consumer-driven contract (CDC) testing, then I suggest the
+If you're new to consumer-driven contract (CDC) testing, then we suggest the
 following resources:
 
 - [Official Pact documentation]
@@ -69,10 +69,9 @@ You can get this one to pass without a running database.
 
 ## Additional Info
 
-Pact has [Javascript], Go, Swift, and .NET libraries too, among others. See
-[Official Pact documentation] for details.
+Pact has Javascript, Java, Go, Swift, and .NET libraries too, among others. See
+the [Official Pact documentation] for details.
 
 [Pact gem]: https://github.com/realestate-com-au/pact
 [Official Pact documentation]: https://docs.pact.io/
 [Martin Fowler's article on CDC]: http://martinfowler.com/articles/consumerDrivenContracts.html#Consumer-drivenContracts
-[Javascript]: https://github.com/pact-foundation/pact-js/
