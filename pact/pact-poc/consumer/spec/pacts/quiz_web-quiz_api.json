@@ -1,0 +1,36 @@
+{
+  "consumer": {
+    "name": "Quiz Web"
+  },
+  "provider": {
+    "name": "Quiz API"
+  },
+  "interactions": [
+    {
+      "description": "a request for a quiz",
+      "provider_state": "a quiz with id 1 exists",
+      "request": {
+        "method": "get",
+        "path": "/quizzes/1",
+        "query": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "id": "1",
+          "title": "Pop Quiz",
+          "instructions": "Take the quiz. Good luck!",
+          "context_id": "1",
+          "shuffle_questions": true,
+          "shuffle_answers": true
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecificationVersion": "1.0.0"
+  }
+}

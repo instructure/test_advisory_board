@@ -1,0 +1,8 @@
+# Ignore bundler config.
+/.bundle
+/vendor/bundle
+
+# Ignore local files
+.byebug_history
+.DS_Store
+.irbrc
