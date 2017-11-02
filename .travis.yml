@@ -1,0 +1,15 @@
+sudo: false
+language: node_js
+cache: 
+  - yarn
+node_js:
+  - "9"
+before_script:
+  - cd grpc && yarn
+script:
+  - node grpc/nodejs/server.js &
+  - node grpc/nodejs/client.js
+notifications:
+  email:
+    on_success: never
+    on_failure: never
