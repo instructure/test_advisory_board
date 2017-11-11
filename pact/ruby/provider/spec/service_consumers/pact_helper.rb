@@ -19,12 +19,10 @@ Pact.service_provider 'Quiz API' do
         }
 
         set_up do
-          @quiz = QuizApi.new(quiz_params)
-          @quiz.save
+          QuizApi.new(quiz_params)
         end
 
         tear_down do
-          @quiz.destroy
         end
       end
     end
