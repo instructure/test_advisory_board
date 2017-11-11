@@ -23,11 +23,6 @@ in the files `consumer/quiz.rb` and `consumer/quiz_service_client.rb`.
 `Quiz API` is our service provider for this example. It's a simple Sinatra app.
 It resides in the `provider/` directory.
 
-I chose not to add a database service, though the Quiz API app would certainly
-need one in order to function. I feel the existing code is sufficient for an
-example of Pact. If you can't stand failing specs, then feel free to add a
-database. :)
-
 ## Setup
 
 1. Clone the test_advisory_board repo to your computer
@@ -55,17 +50,12 @@ cd ./provider/ && bundle exec rake pact:verify
 
 5. Now observe Pact's auto-generated logs for the provider: `./provider/log/`
 
-Because we don't have a running database, the pact verification will fail.
-That's OK. Check out the helpful error output in the console! Pact is pretty
-awesome.
-
 This is useful too: `./provider/reports/pacts/help.md`.
 
 ## Learning Exercises
 
 Open `./provider/quiz_api.rb`. See the two defined routes? Try adding an RSpec
 specification to the consumer that will generate a pact against the `/` route.
-You can get this one to pass without a running database.
 
 ## Additional Info
 
