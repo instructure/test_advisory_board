@@ -1,0 +1,42 @@
+{
+  "provider" : {
+    "name" : "dummy-provider"
+  },
+  "consumer" : {
+    "name" : "dummy-consumer"
+  },
+  "interactions" : [ {
+    "providerState" : "PERFORM ROCKS",
+    "description" : "get perform rocks response",
+    "request" : {
+      "method" : "GET",
+      "path" : "/perform-rocks"
+    },
+    "response" : {
+      "status" : 200,
+      "headers" : {
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "body" : {
+        "id" : 7271247464,
+        "content" : "LnkZkqMLPUMynPqqnGat"
+      },
+      "responseMatchingRules" : {
+        "$.body.id" : {
+          "match" : "type"
+        },
+        "$.body.content" : {
+          "match" : "type"
+        }
+      }
+    }
+  } ],
+  "metadata" : {
+    "pact-specification" : {
+      "version" : "2.0.0"
+    },
+    "pact-jvm" : {
+      "version" : "2.1.12"
+    }
+  }
+}
