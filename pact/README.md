@@ -8,6 +8,8 @@ These are examples of using Pact for consumer-driven contract testing.
 
 Pact has Javascript, Java, Go, Swift, and .NET libraries too, among others.
 
+Pact has Javascript, Java, Go, Swift, and .NET libraries too, among others.
+
 ## Learning Pact
 
 If you're new to consumer-driven contract (CDC) testing, then we suggest the
