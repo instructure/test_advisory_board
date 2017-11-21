@@ -3,6 +3,10 @@
 These are examples of using Pact for consumer-driven contract testing.
 
 - [Pact (Ruby)](./ruby/README.md)
+- [Pact (Java)](./java/README.md)
+- [Pact (Swift)](./swift/README.md)
+
+Pact has Javascript, Java, Go, Swift, and .NET libraries too, among others.
 
 Pact has Javascript, Java, Go, Swift, and .NET libraries too, among others.
 

@@ -1,0 +1,39 @@
+{
+  "consumer": {
+    "name": "Teacher App"
+  },
+  "provider": {
+    "name": "Canvas"
+  },
+  "interactions": [
+    {
+      "description": "grading type change",
+      "providerState": "an assignment",
+      "request": {
+        "method": "put",
+        "path": "/courses/1/assignments/1",
+        "body": {
+          "id": 1,
+          "grading_type": "pass_fail",
+          "course_id": 1
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "id": 1,
+          "grading_type": "pass_fail",
+          "course_id": 1
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
