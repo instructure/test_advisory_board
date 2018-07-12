@@ -13,23 +13,25 @@ following resources:
 
 - [Official Pact documentation]
 - [Martin Fowler's article on CDC]
-- [mikey's presentation on Testing Microservices with Pact]
+- [mikey's presentation on Testing Contracts with Pact]
+- [mikey's other presentation on Testing Microservices with Pact]
 
 ## FAQ
 
+### What's the ultimate vision for Pact at Instructure?
+
+[Pact Nirvana!]
+
 ### How does Pact fit in with the development of new features?
 
-The answer depends on the team, but remember these two fundamentals:
+The answer depends on the team, but remember: The needs of the consumer should
+drive the functionality of the provider.
 
-1. You should not be committing functionality to the master branch of the
-consumer before it can be supported by the provider.
-2. The functionality of the provider should still be driven by the needs of the
-consumer.
+Where teams use feature flags (and most do at Instructure), the Canvas Pact Team
+has devised an approach that should work well! More to come as the process is
+built and ironed out.
 
-With those principles in mind, here are patterns others have followed with
-success:
-
-- [Development Workflow with Pact]
+Where teams use feature branches, this may be helpful: [Development Workflow with Pact]
 
 ### How can I use Pact to ensure backwards compatibility between API providers and consumers?
 
@@ -41,7 +43,9 @@ strongly recommend reading the following (in order):
 
 [Official Pact documentation]: https://docs.pact.io/
 [Martin Fowler's article on CDC]: http://martinfowler.com/articles/consumerDrivenContracts.html#Consumer-drivenContracts
+[mikey's presentation on Testing Contracts with Pact]: https://app.slidebean.com/p/EeFf44ooau/Testing-Contracts-with-Pact
 [mikey's presentation on Testing Microservices with Pact]: https://app.slidebean.com/p/pvUQEmSsCo/Testing-Microservices-with-Pact
+[Pact Nirvana!]: https://docs.google.com/document/d/e/2PACX-1vRf1kSDccImNipOOm1G-bjcSs-ifbZjf1v54K-dIcq8BLKeFPAAm_bf_p71UKqkRMIx30QWWL-kN8TI/pub
 [Enter the Pact Matrix]: http://rea.tech/enter-the-pact-matrix-or-how-to-decouple-the-release-cycles-of-your-microservices/
 [Development Workflow with Pact]: https://github.com/pact-foundation/pact-ruby/wiki/Development-workflow
 [Tagging Pacts]: https://github.com/pact-foundation/pact_broker/wiki/How-to-ensure-backwards-compatibility-by-tagging-pacts
