@@ -44,7 +44,7 @@ strongly recommend reading the following (in order):
 [Official Pact documentation]: https://docs.pact.io/
 [Martin Fowler's article on CDC]: http://martinfowler.com/articles/consumerDrivenContracts.html#Consumer-drivenContracts
 [mikey's presentation on Testing Contracts with Pact]: https://app.slidebean.com/p/EeFf44ooau/Testing-Contracts-with-Pact
-[mikey's presentation on Testing Microservices with Pact]: https://app.slidebean.com/p/pvUQEmSsCo/Testing-Microservices-with-Pact
+[mikey's other presentation on Testing Microservices with Pact]: https://app.slidebean.com/p/pvUQEmSsCo/Testing-Microservices-with-Pact
 [Pact Nirvana!]: https://docs.google.com/document/d/e/2PACX-1vRf1kSDccImNipOOm1G-bjcSs-ifbZjf1v54K-dIcq8BLKeFPAAm_bf_p71UKqkRMIx30QWWL-kN8TI/pub
 [Enter the Pact Matrix]: http://rea.tech/enter-the-pact-matrix-or-how-to-decouple-the-release-cycles-of-your-microservices/
 [Development Workflow with Pact]: https://github.com/pact-foundation/pact-ruby/wiki/Development-workflow
