@@ -1,0 +1,62 @@
+---
+format_version: '4'
+
+workflows:
+  ci:
+    after_run:
+    - build_using_repo_config
+  build_using_repo_config:
+    steps:
+    - script:
+        inputs:
+        - content: |-
+            #!/bin/bash
+            set -ex
+            envman add --key YARN_CACHE_DIR --value "$(yarn cache dir)"
+        title: Export YARN_CACHE_DIR
+    - activate-ssh-key:
+        run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+    - git::https://github.com/instructure/steps-disable-git-lfs.git@master:
+        title: Disable Git LFS
+    - git-clone: {}
+    - script:
+       title: Build using the repo bitrise.yml
+       inputs:
+       - content: |-
+           #!/usr/bin/env bash
+           set -ex
+           bitrise run "${BITRISE_TRIGGERED_WORKFLOW_ID}"
+    - script:
+        title: Pact Ruby
+        inputs:
+        - content: |-
+            #!/usr/bin/env bash
+            set -ex
+
+            ruby -v
+            bundle --version
+
+            cd pact/ruby
+            cd consumer
+            bundle install
+            bundle exec rspec
+            cd -
+
+            cd provider
+            bundle install
+            bundle exec rake pact:verify
+    - script:
+        title: Pact Java
+        inputs:
+        - content: |-
+            #!/usr/bin/env bash
+            set -ex
+
+            cd pact/java/provider
+            ./gradlew clean build
+            java -jar build/libs/gs-actuator-service-0.1.0.jar &> /dev/null &
+            sleep 20
+            cd ../consumer
+            ./gradlew test
+            cd ../provider
+            ./gradlew pactVerify
