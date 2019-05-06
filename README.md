@@ -8,6 +8,7 @@ Primary focus is on testing.
 ## Proofs of concept
 
 - [Pact](pact) - Contract testing approach used by various Instructure apps
+- [TestCafe](testcafe) - A Node.js tool to automate end-to-end web testing
 
 ## Continuous Integration
 
