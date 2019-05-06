@@ -1,8 +1,10 @@
-# Test Advisory Board [![Build Status](https://app.bitrise.io/app/d528939eac6fe1db/status.svg?token=r7omaK8c9XTuCFxeNeP86A&branch=)](https://app.bitrise.io/app/d528939eac6fe1db)
+# Test Advisory Board [![Build Status](https://app.bitrise.io/app/d528939eac6fe1db/status.svg?token=r7omaK8c9XTuCFxeNeP86A)](https://app.bitrise.io/app/d528939eac6fe1db)
 
-Collection of proof of concepts that demonstrate technology used in production. Primary focus is on testing.
+A collection of proofs of concept that demonstrate technology used throughout
+Instructure.
 
-## Proof of concepts
+Primary focus is on testing.
 
-- [gRPC](grpc) - Data seeding approach used by Instructure's mobile apps for UI testing
+## Proofs of concept
+
 - [Pact](pact) - Contract testing approach used by various Instructure apps
