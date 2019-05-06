@@ -1,4 +1,4 @@
-# Test Advisory Board [![Build Status](https://www.bitrise.io/app/d528939eac6fe1db/status.svg?token=r7omaK8c9XTuCFxeNeP86A)](https://www.bitrise.io/app/d528939eac6fe1db)
+# Test Advisory Board [![Build Status](https://app.bitrise.io/app/d528939eac6fe1db/status.svg?token=r7omaK8c9XTuCFxeNeP86A&branch=)](https://app.bitrise.io/app/d528939eac6fe1db)
 
 Collection of proof of concepts that demonstrate technology used in production. Primary focus is on testing.
 
