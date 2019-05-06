@@ -1,6 +1,10 @@
 ---
 format_version: '4'
 
+# This config is invoked by a wrapper configuration stored in bitrise.io
+# See https://devcenter.bitrise.io/tips-and-tricks/use-bitrise-yml-from-repository/
+# and https://app.bitrise.io/app/d528939eac6fe1db#/workflow
+
 workflows:
   ci:
     after_run:
