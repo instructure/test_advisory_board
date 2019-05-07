@@ -12,8 +12,8 @@ workflows:
     - script:
         title: Pact Ruby
         inputs:
-        - content: "bash ./pact/ruby/build.sh"
+        - content: "cd pact/ruby && bash ./build.sh"
     - script:
         title: Pact Java
         inputs:
-        - content: "bash ./pact/java/build.sh"
+        - content: "cd pact/java && bash ./build.sh"
