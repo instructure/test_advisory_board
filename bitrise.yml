@@ -9,10 +9,10 @@ workflows:
   ci:
     steps:
     - script:
-      title: Pact Ruby
-      inputs:
-      - content: "bash ./pact/ruby/build.sh"
+        title: Pact Ruby
+        inputs:
+        - content: "bash ./pact/ruby/build.sh"
     - script:
-      title: Pact Java
-      inputs:
-      - content: "bash ./pact/java/build.sh"
+        title: Pact Java
+        inputs:
+        - content: "bash ./pact/java/build.sh"
