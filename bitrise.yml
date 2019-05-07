@@ -17,3 +17,7 @@ workflows:
         title: Pact Java
         inputs:
         - content: "cd pact/java && bash ./build.sh"
+    - script:
+        title: TestCafe
+        inputs:
+        - content: "cd testcafe && bash ./build.sh"
