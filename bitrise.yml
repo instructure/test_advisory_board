@@ -11,34 +11,8 @@ workflows:
     - script:
       title: Pact Ruby
       inputs:
-      - content: |-
-        #!/usr/bin/env bash
-        set -ex
-
-        ruby -v
-        bundle --version
-
-        cd pact/ruby
-        cd consumer
-        bundle install
-        bundle exec rspec
-        cd -
-
-        cd provider
-        bundle install
-        bundle exec rake pact:verify
+      - content: "bash ./pact/ruby/build.sh"
     - script:
       title: Pact Java
       inputs:
-      - content: |-
-        #!/usr/bin/env bash
-        set -ex
-
-        cd pact/java/provider
-        ./gradlew clean build
-        java -jar build/libs/gs-actuator-service-0.1.0.jar &> /dev/null &
-        sleep 20
-        cd ../consumer
-        ./gradlew test
-        cd ../provider
-        ./gradlew pactVerify
+      - content: "bash ./pact/java/build.sh"
