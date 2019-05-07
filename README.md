@@ -11,7 +11,17 @@ Primary focus is on testing.
 
 ## Continuous Integration
 
-We use [bitrise.io][bitrise] to run our continuous integration builds for this
-repo. See [`bitrise.yml`](bitrise.yml) for details.
+We use [bitrise.io][bitrise] to run our continuous integration (CI) builds for
+this repo. See [`bitrise.yml`](bitrise.yml) for details.
+
+To run the same CI steps on your computer:
+
+1. Install the [Bitrise CLI][cli] (`brew install bitrise` for you homebrewers)
+2. Run this inside your terminal in this repo:
+
+```sh
+bitrise run --workflow ci
+```
 
 [bitrise]: https://app.bitrise.io/app/d528939eac6fe1db#/builds
+[cli]: https://app.bitrise.io/cli
