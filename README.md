@@ -1,5 +1,7 @@
 # Test Advisory Board [![Build Status](https://app.bitrise.io/app/d528939eac6fe1db/status.svg?token=r7omaK8c9XTuCFxeNeP86A)](https://app.bitrise.io/app/d528939eac6fe1db)
 
+# DO NOT USE. We're migrating this repo to Gerrit.
+
 A collection of proofs of concept that demonstrate technology used throughout
 Instructure.
 
